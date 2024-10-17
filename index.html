@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Register to Fancy Form</h1>
+      <p>
+        All fields are <span class="pink">required</span> unless marked as
+        "optional"
+      </p>
+      <br />
+      <label for="input-ID">You unique ID that you can't change</label>
+      <input id="input-ID" type="text" value="YBX0123" readonly />
+      <br />
+
+      <label for="input-email">Email:</label><br />
+      <input
+        id="input-email"
+        type="email"
+        required
+        minlength="3"
+        maxlength="40"
+      />
+      <br />
+      <label for="input-password">Password:</label><br />
+      <input
+        id="input-password"
+        type="password"
+        required
+        minlength="5"
+        maxlength="20"
+      />
+      <br />
+      <label for="input-age">Age:</label><br />
+      <input id="input-age" type="number" required min="18" max="65" /> <br />
+      <label for="input-text">Tell us a little about yourself (optional):</label
+      ><br />
+      <textarea id="input-text" rows="3" cols="25" required></textarea>
+      <br />
+      <input id="check" type="checkbox" />
+      <label for="check"> I agree with the Terms & Conditions</label>
+      <br />
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
